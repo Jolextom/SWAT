@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity; /* Enable vertical scroll snapping */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  height: 100vh; /* Set a fixed height for the container */
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f8f7f7;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn {
+  border-radius: 1.25rem;
+  background: #cc3c39;
+  color: #efefef;
+  border: none;
+  font-size: 1.5625rem;
+  font: inherit;
+  font-weight: 600;
+  padding: 0.6rem 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  transform: translateY(-1rem);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.place-center {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.left .tag {
+  color: #353535;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.17556rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline;
+  padding: 0.3rem 1.5rem;
+}
