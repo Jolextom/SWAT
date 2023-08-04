@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import React, { useEffect, useRef } from "react";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const PinningSection = () => {
   return (
@@ -12,8 +12,8 @@ const PinningSection = () => {
               <div className="button-container">
                 <div className="tag">Since 2009</div>
               </div>
-              <h2>
-                Over a <span>Decade</span> of Youth Empowerment
+              <h2 className=" text-xl lg:text-5xl">
+                Over a <span className="text-[#cc3c39]" >Decade</span> of Youth Empowerment
               </h2>
             </div>
           </div>
