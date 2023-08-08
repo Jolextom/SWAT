@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .header {
   /* min-height: 35rem; */
   /* background-color: red; */
@@ -25,13 +29,6 @@
   align-items: center;
 }
 
-.logo > h3 {
-  color: #353535;
-  font-family: Mutant Academy BB;
-  font-size: 1.215rem;
-  font-weight: 400;
-  padding-left: 1rem;
-}
 
 .navbar > ul {
   margin-right: 6rem;
@@ -80,14 +77,7 @@
   z-index: -999;
 }
 
-.showcase h1 {
-  color: #f8f7f7;
-  text-align: center;
-  font-family: Mutant Academy BB;
-  font-size: 5.625rem;
-  font-style: normal;
-  font-weight: 400;
-}
+
 .showcase p {
   color: #f8f7f7;
   text-align: center;
@@ -382,25 +372,13 @@
   margin-top: 10rem;
   width: 100%;
 }
-.event-section h2 {
-  width: 100%;
-  font-family: Mutant Academy BB;
-  font-size: 6.25rem;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 153.9%; /* 9.61875rem */
-  letter-spacing: 3.125rem;
-  white-space: nowrap;
-  display: grid;
-  /* align-items: center; */
-  place-items: center;
-  /* opacity: 0.5; */
-  color: #f8f7f7; /* Set the text color */
+.custom-text-shadow {
   text-shadow: -1px -1px 0 #cc3c39, /* Top left */ 1px -1px 0 #cc3c39,
-    /* Top right */ -1px 1px 0 #cc3c39, /* Bottom left */ 1px 1px 0 #cc3c39; /* Bottom right */
+  /* Top right */ -1px 1px 0 #cc3c39, /* Bottom left */ 1px 1px 0 #cc3c39; /* Bottom right */
 }
 
-.event-body {
+
+/* .event-body {
   background: #f5f4f4;
   transform: translateY(-4.5rem);
   padding: 2rem;
@@ -408,7 +386,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   place-items: center;
-}
+} */
 
 .card {
   background-color: white;
@@ -493,7 +471,7 @@
 .box h2 {
   color: #353535;
   font-family: Montserrat;
-  font-size: 3rem;
+
   font-style: normal;
   font-weight: 900;
   line-height: normal;
@@ -503,7 +481,7 @@
 .box h2 span {
   color: #cc3c39;
   font-family: Montserrat;
-  font-size: 3rem;
+
   font-style: normal;
   font-weight: 900;
   line-height: normal;

@@ -1,12 +1,12 @@
-import React from "react";
+
 
 const Event = () => {
   return (
     <>
       <div className="event-section">
-        <h2>RECENT EVENTS</h2>
-        <div className="event-body">
-          <div className="card">
+        <h2 className="custom-text-shadow">RECENT EVENTS</h2>
+        <div className=" flex flex-wrap gap-5  ">
+          <div className="card  ">
             <div className="card-header">
               <img src="./event_01.png" alt="" />
             </div>

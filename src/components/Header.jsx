@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./Navbar";
 import About from "./About";
 import Vision from "./Vision";
@@ -20,63 +19,13 @@ import Logo14 from "../assets/14.png";
 import Logo17 from "../assets/17.png";
 import Logo18 from "../assets/18.png";
 import Logo19 from "../assets/19.png";
+import HeroSection from "./HeroSection";
 
 const Header = () => {
   return (
     <>
-      <div className="header">
-        <div className="showcase">
-          <Navbar />
-          <img src={Bg} className="showcaseImg" alt="children's of God" />
-          <h1>
-            S.W.A.T <br />
-            Leadership Academy
-          </h1>
-          <p>
-            Empowering Tomorrow’s Leaders,
-            <br /> Shaping the Society
-          </p>
-        </div>
-        <div className="cta flex">
-          <button className="btn">Join Us</button>
-          <button className="btn">Partner</button>
-        </div>
-        <div className="flex center next">
-          <a href="#about">
-            {" "}
-            <img src={arrowSvg} alt="next page arrow down" />
-          </a>
-        </div>
-        <div className="logos">
-          <div className="logos-slide ">
-            <img src={Logo1} alt="" />
-            <img src={Logo2} alt="" />
-            <img src={Logo3} alt="" />
-            <img src={Logo4} alt="" />
-            <img src={Logo5} alt="" />
-            <img src={Logo6} alt="" />
-            <img src={Logo7} alt="" />
-            <img src={Logo14} alt="" />
-            <img src={Logo17} alt="" />
-            <img src={Logo18} alt="" />
-            <img src={Logo19} alt="" />
-          </div>
-          <div className="logos-slide">
-            <img src={Logo1} alt="" />
-            <img src={Logo2} alt="" />
-            <img src={Logo3} alt="" />
-            <img src={Logo4} alt="" />
-            <img src={Logo5} alt="" />
-            <img src={Logo6} alt="" />
-            <img src={Logo7} alt="" />
-            <img src={Logo14} alt="" />
-            <img src={Logo17} alt="" />
-            <img src={Logo18} alt="" />
-            <img src={Logo19} alt="" />
-          </div>
-        </div>
-      </div>
-      <About />
+      <HeroSection />
+      {/* <About /> */}
       <Vision />
       <UniGrid />
       <PinningSection />
