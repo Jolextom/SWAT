@@ -1,3 +1,4 @@
+import { slideshowsPartner } from "../utils/slideshow";
 import Navbar from "./Navbar";
 import { PrimaryButton } from "./common/Button";
 import ArrowDown from "./svgs/ArrowDown";
@@ -13,7 +14,7 @@ const HeroSection = () => {
               S.W.A.T <br />
               LEADERSHIP ACADEMY
             </h1>
-            <h2 className="text-2xl mt-2 font-light text-center text-[40px]">
+            <h2 className="text-lg lg:text-2xl mt-2 font-light text-center text-[40px]">
               Empowering Tomorrow’s Leaders, Shaping the Society
             </h2>
           </div>
@@ -33,6 +34,15 @@ const HeroSection = () => {
         <a href="#about">
             <ArrowDown />
         </a>
+      </div>
+
+      <div className=" w-full max-w-[100%] overflow-hidden gap-x-10  flex">
+          <div className="flex animate-slides_linear  items-center gap-x-10 ">
+            {slideshowsPartner.map(data=><img className="images block w-12      " key={data} src={data}/>)}
+            </div>
+      </div> 
+      <div>
+        <p className="text-[15px] text-center font-semibold text-[#CC3C39]">Partners Over the Years</p>
       </div>
     </div>
   );

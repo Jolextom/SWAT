@@ -11,7 +11,18 @@ export default {
       },
       fontFamily:{
         mutant: "Mutant Academy BB" // custom font use
+      },
+      keyframes:{
+        slide_infinite:{
+          "100%": { 
+            "-webkit-transform": "translateX(-200%)"
+          }
+        }
+      },
+      animation: {
+        slides_linear: 'slide_infinite 20s infinite linear',
       }
+
     },
   },
   plugins: [],

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import  { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -35,15 +35,10 @@ const Vision = () => {
   return (
     <>
       <div className="reveal">
-        <div className="text-center title">Our Vision</div>
+        <div className="text-center text-3xl font-black lg:text-[3rem]">Our Vision</div>
         <div ref={triggerRef}>
           <div
-            style={{
-              margin: "0 auto",
-              width: "70%",
-              textAlign: "center",
-              padding: "3rem 0",
-            }}
+            className="mx-auto w-[100%] py-[3rem] text-center lg:w-[70%]"
           >
             {text.split("").map((letter, index) => {
               return (
@@ -53,7 +48,6 @@ const Vision = () => {
                   ref={(el) => (lettersRef.current[index] = el)}
                 >
                   {letter}
-                  {console.log(lettersRef)}
                 </span>
               );
             })}
